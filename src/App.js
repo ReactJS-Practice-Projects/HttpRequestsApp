@@ -34,8 +34,8 @@ function App() {
     setIsLoading(false);
   }, []);
 
-  //we use - useEffect to fetch API when app is loadedfor the first time
-  //the we use - useCallback in fetchMoviesHandler to prevent infinite loop
+  //we use - useEffect to fetch API when app is loaded for the first time
+  //then we use - useCallback in fetchMoviesHandler to prevent infinite loop
   //the instructor provided vague explanations about it 
   useEffect(() => {
     fetchMoviesHandler();
